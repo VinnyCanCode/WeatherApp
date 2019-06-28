@@ -9,7 +9,8 @@ body {
   color: white;
   text-shadow: 2px 2px black;
   margin: 1rem;
-  overflow: hidden; }
+  overflow: hidden;
+  font-family: 'raleway', sans-serif; }
   body header {
     width: 90vw;
     height: 30vh; }
@@ -26,10 +27,19 @@ body {
         width: 7rem; }
     body header .datelocation {
       position: relative;
+      width: 30rem;
       left: 57rem;
       bottom: 3rem;
-      font-size: .7rem;
-      word-spacing: .7rem; }
+      font-size: .8rem;
+      word-spacing: .5rem; }
+    body header input {
+      width: 15rem;
+      height: 2rem;
+      border: 1px white solid;
+      border-radius: 1rem;
+      font-size: 1rem;
+      outline: none;
+      padding-left: 1rem; }
   body .middle {
     width: 50vw;
     position: relative;
@@ -74,4 +84,5 @@ body {
   left: 18rem;
   bottom: -2rem;
   height: 35rem;
-  width: 35rem; }
+  width: 35rem;
+  z-index: -1; }
