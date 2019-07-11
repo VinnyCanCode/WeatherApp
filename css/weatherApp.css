@@ -5,23 +5,22 @@
   list-style: none; }
 
 body {
-  background: linear-gradient(135deg, rgba(122, 188, 255, 0.7) 0%, rgba(96, 171, 248, 0.7) 44%, #4096ee 100%);
+  background: url("../img/photo-1531147646552-1eec68116469.jpeg") 100%/cover no-repeat;
   height: 100vw;
   color: white;
-  background-color: rgba(79, 151, 217, 0.2);
   text-shadow: 2.5px 2.5px black;
   margin: 1rem;
   overflow: hidden;
   font-family: 'raleway', sans-serif; }
   body header {
-    width: 90vw;
-    height: 30vh; }
+    width: 50%;
+    height: 15%; }
     body header .logo {
       display: flex;
-      margin-left: 12rem;
+      margin-left: 23rem;
       margin-top: 5rem;
       width: 12rem;
-      height: 6rem;
+      height: 1rem;
       align-items: flex-end;
       justify-content: center; }
       body header .logo img {
@@ -29,8 +28,8 @@ body {
         width: 7rem; }
     body header .datelocation {
       position: relative;
-      width: 30rem;
-      left: 57rem;
+      width: 25vw;
+      left: 75rem;
       bottom: 3rem;
       font-size: .8rem;
       word-spacing: .5rem; }
@@ -50,12 +49,26 @@ body {
       border-radius: 1rem;
       font-size: 1rem;
       outline: none;
-      padding-left: 1rem; }
+      padding-left: 1rem;
+      text-shadow: none; }
   body .middle {
     width: 50vw;
+    height: 55vh;
     position: relative;
-    left: 12rem;
-    bottom: 2rem; }
+    font-weight: 700;
+    display: flex;
+    left: 28rem;
+    bottom: 3rem;
+    color: black;
+    text-shadow: 3px 3px white;
+    background: linear-gradient(45deg, #e0e0e0 0%, #f6f6f6 47%, #e2e2e2 100%);
+    border: 5px linear-gradient(135deg, white 0%, #f6f6f6 47%, #ededed 100%) solid;
+    border-radius: 40px;
+    z-index: -2;
+    box-shadow: 0px 0px 15px 2px #00428c; }
+    body .middle .centerContainer {
+      position: relative;
+      left: 5rem; }
     body .middle .topInfo {
       display: flex;
       flex-direction: row;
@@ -71,32 +84,48 @@ body {
       body .middle .topInfo .currentTemp {
         font-size: 12rem; }
       body .middle .topInfo .degree {
-        font-size: 11rem; }
+        font-size: 10rem;
+        font-weight: 100;
+        text-shadow: none; }
       body .middle .topInfo .weatherDescript {
-        font-size: 4.5rem; }
+        font-size: 2.5rem; }
     body .middle .underline {
       position: relative;
       left: 9rem;
       width: 25vw;
       content: '';
-      border: rgba(255, 255, 255, 0.6) 1px solid; }
+      border: black 1px solid; }
+    body .middle .underlineTwo {
+      position: relative;
+      font-weight: 100;
+      font-size: 7rem; }
     body .middle .additionalInfo {
       margin-top: 2rem;
       width: 34vw;
       display: flex;
       justify-content: flex-end;
       position: relative;
-      left: 2rem; }
+      left: 0rem; }
       body .middle .additionalInfo .moreInfo {
         width: 28vw;
-        font-size: 1.7rem;
+        font-size: 2.5rem;
         text-align: center;
         animation-name: fadeIn;
-        animation-duration: 1.5s; }
+        animation-duration: 1.5s;
+        line-height: .5rem; }
         body .middle .additionalInfo .moreInfo th {
           height: 5rem; }
-        body .middle .additionalInfo .moreInfo .fa-tint {
-          font-size: 2rem; }
+        body .middle .additionalInfo .moreInfo .percentage {
+          font-size: 1.5rem; }
+        body .middle .additionalInfo .moreInfo .humidityDetail {
+          font-size: .5rem; }
+        body .middle .additionalInfo .moreInfo .mph {
+          font-size: 1rem; }
+        body .middle .additionalInfo .moreInfo .windSpeed {
+          font-size: .4rem; }
+        body .middle .additionalInfo .moreInfo .humidity {
+          width: 2.5rem;
+          height: 2.5rem; }
         body .middle .additionalInfo .moreInfo .fa-wind {
           font-size: 2rem; }
 
@@ -108,8 +137,273 @@ body {
 
 .weather {
   position: absolute;
-  left: 15rem;
-  bottom: -4rem;
-  height: 45rem;
-  width: 45rem;
-  z-index: -1; }
+  left: 18rem;
+  bottom: 7rem;
+  height: 35rem;
+  width: 35rem;
+  z-index: -1;
+  animation-name: fadeIn;
+  animation-duration: 1.7s; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.pac-item {
+  text-shadow: none; }
+
+/* Big Screen */
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) and (max-width: 1600px) {
+  body {
+    background: url("../img/photo-1531147646552-1eec68116469.jpeg") 100%/cover repeat; }
+    body header .logo {
+      margin-left: 15rem; }
+    body header .datelocation {
+      left: 55rem; }
+    body .middle {
+      left: 20rem; }
+    body .weather {
+      left: 13rem;
+      bottom: 3rem;
+      height: 110%;
+      width: 100%; } }
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  body {
+    background-size: 300% 300%;
+    background-position: center 50%; }
+    body header .logo {
+      margin-left: 10rem; }
+    body header .datelocation {
+      left: 45rem; }
+    body .middle {
+      width: 55vw;
+      left: 13rem;
+      top: 2rem; }
+      body .middle .additionalInfo .moreInfo {
+        position: relative;
+        left: 3rem;
+        bottom: 1rem;
+        font-size: 2rem; }
+        body .middle .additionalInfo .moreInfo th {
+          padding-right: 1rem; }
+        body .middle .additionalInfo .moreInfo td {
+          padding-right: 1rem; }
+        body .middle .additionalInfo .moreInfo .mph {
+          padding-left: 2rem;
+          font-size: .8rem; }
+    body .weather {
+      left: 11rem;
+      bottom: 6rem;
+      height: 25rem;
+      width: 25rem; } }
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-size: 150% 300%; }
+    body header .logo {
+      margin-left: 2rem; }
+    body header .datelocation {
+      left: 32rem; }
+    body .middle {
+      left: 8rem;
+      top: 5rem;
+      width: 50vw; }
+      body .middle .topInfo .currentTemp {
+        font-size: 8rem; }
+      body .middle .topInfo .weatherDescript {
+        font-size: 1.5rem;
+        right: 1rem; }
+      body .middle .topInfo .underline {
+        width: 5rem; }
+      body .middle .underline {
+        width: 14rem;
+        left: 5rem; }
+      body .middle .underlineTwo {
+        font-size: 3rem; }
+      body .middle .additionalInfo .moreInfo {
+        position: relative;
+        right: 5rem;
+        bottom: 1rem;
+        font-size: 2rem; }
+        body .middle .additionalInfo .moreInfo th {
+          padding-right: 1rem; }
+        body .middle .additionalInfo .moreInfo td {
+          padding-right: 1rem; }
+        body .middle .additionalInfo .moreInfo .mph {
+          padding-left: 2rem;
+          font-size: .8rem; }
+    body .weather {
+      left: 7rem;
+      bottom: 7rem;
+      height: 25rem;
+      width: 25rem; } }
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    background-size: 150% 300%; }
+    body header .logo {
+      margin-left: 0rem; }
+    body header .datelocation {
+      left: 28rem; }
+    body header input {
+      width: 13rem; }
+    body .middle {
+      left: 8rem;
+      top: 5rem;
+      width: 50vw; }
+      body .middle .topInfo .currentTemp {
+        position: relative;
+        font-size: 7rem;
+        right: 2rem; }
+      body .middle .topInfo .weatherDescript {
+        font-size: 1.5rem;
+        right: 4rem;
+        position: relative; }
+      body .middle .underline {
+        width: 14rem;
+        left: 2rem; }
+      body .middle .underlineTwo {
+        font-size: 3rem; }
+      body .middle .additionalInfo .moreInfo {
+        position: relative;
+        right: 3rem;
+        bottom: 1rem;
+        font-size: 2rem; }
+        body .middle .additionalInfo .moreInfo th {
+          padding-right: 1rem; }
+        body .middle .additionalInfo .moreInfo td {
+          padding-right: 1rem; }
+        body .middle .additionalInfo .moreInfo .mph {
+          padding-left: 2rem;
+          font-size: .8rem; }
+    body .weather {
+      left: 5rem;
+      bottom: 6rem;
+      height: 25rem;
+      width: 25rem; } }
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    background-size: 150% 300%; }
+    body header .logo {
+      margin-left: 0rem; }
+    body header .datelocation {
+      left: 22rem; }
+    body header input {
+      width: 11rem; }
+    body .middle {
+      left: 5rem;
+      top: 5rem;
+      width: 50vw;
+      height: 45vw; }
+      body .middle .topInfo .currentTemp {
+        position: relative;
+        font-size: 5rem;
+        right: 3rem; }
+      body .middle .topInfo .degree {
+        font-size: 6rem; }
+      body .middle .topInfo .weatherDescript {
+        font-size: 1.5rem;
+        right: 4rem;
+        position: relative; }
+      body .middle .underline {
+        width: 10rem;
+        left: 2rem; }
+      body .middle .underlineTwo {
+        font-size: 3rem; }
+      body .middle .additionalInfo .moreInfo {
+        position: relative;
+        right: 1rem;
+        bottom: 1rem;
+        font-size: 2rem; }
+        body .middle .additionalInfo .moreInfo th {
+          padding-right: 1rem; }
+        body .middle .additionalInfo .moreInfo td {
+          padding-right: 1rem; }
+        body .middle .additionalInfo .moreInfo .mph {
+          padding-left: 2rem;
+          font-size: .8rem; }
+    body .weather {
+      left: 5rem;
+      bottom: 2rem;
+      height: 25rem;
+      width: 25rem; } }
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    background: url("../img/photo-1531147646552-1eec68116469.jpeg") 100%/cover no-repeat;
+    background-size: 800% 800%;
+    overflow: hidden; }
+    body header .logo {
+      margin-left: 0rem; }
+    body header .datelocation {
+      font-size: .6rem;
+      left: 16rem; }
+      body header .datelocation .cornerDash {
+        display: none; }
+    body header input {
+      width: 11rem; }
+    body .middle {
+      left: 2rem;
+      top: 10rem;
+      width: 90vw;
+      height: 95vw; }
+      body .middle .topInfo .currentTemp {
+        position: relative;
+        font-size: 5rem;
+        right: 3rem; }
+      body .middle .topInfo .degree {
+        font-size: 6rem; }
+      body .middle .topInfo .weatherDescript {
+        font-size: 1.5rem;
+        right: 4rem;
+        position: relative; }
+      body .middle .underline {
+        width: 10rem;
+        left: 2rem; }
+      body .middle .underlineTwo {
+        font-size: 3rem; }
+      body .middle .additionalInfo .moreInfo {
+        position: relative;
+        left: 7rem;
+        bottom: 1rem;
+        font-size: 2rem; }
+        body .middle .additionalInfo .moreInfo th {
+          padding-right: 1rem; }
+        body .middle .additionalInfo .moreInfo td {
+          padding-right: 1rem; }
+        body .middle .additionalInfo .moreInfo .mph {
+          padding-left: 2rem;
+          font-size: .8rem; }
+    body .weather {
+      left: -4.5rem;
+      bottom: 9rem;
+      height: 20rem;
+      width: 20rem; } }
