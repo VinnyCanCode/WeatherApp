@@ -409,7 +409,7 @@ body {
         display: none; }
       body .middle .additionalInfo .moreInfo {
         position: relative;
-        left: 2rem;
+        left: 6rem;
         top: 2rem;
         font-size: 2rem; }
         body .middle .additionalInfo .moreInfo th {
@@ -420,7 +420,7 @@ body {
           padding-left: 2rem;
           font-size: .8rem; }
     body .weather {
-      left: -4.5rem;
+      right: 4rem;
       bottom: 9rem;
       height: 20rem;
       width: 20rem; }
