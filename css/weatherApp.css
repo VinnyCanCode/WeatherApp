@@ -259,7 +259,8 @@ body {
 */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   body {
-    background-size: 150% 300%; }
+    background: url("../img/photo-1531147646552-1eec68116469.jpeg") no-repeat center center fixed;
+    width: 100%; }
     body header .logo {
       margin-left: 0rem; }
     body header .datelocation {
@@ -299,7 +300,21 @@ body {
       left: 5rem;
       bottom: 6rem;
       height: 25rem;
-      width: 25rem; } }
+      width: 25rem; }
+  body:after {
+    content: "";
+    position: fixed;
+    /* stretch a fixed position to the whole screen */
+    top: 0;
+    height: 100vh;
+    /* fix for mobile browser address bar appearing disappearing */
+    left: 0;
+    right: 0;
+    z-index: -1;
+    /* needed to keep in the background */
+    background: url("../img/photo-1531147646552-1eec68116469.jpeg") center center;
+    background-size: cover;
+    position: relative; } }
 
 /*
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -358,42 +373,44 @@ body {
 */
 @media (min-width: 320px) and (max-width: 480px) {
   body {
-    background: url("../img/photo-1531147646552-1eec68116469.jpeg") 100%/cover no-repeat;
-    background-size: 800% 800%;
-    overflow: hidden; }
+    background: url("../img/photo-1531147646552-1eec68116469.jpeg") no-repeat center center fixed;
+    background-size: 800% 800%; }
     body header .logo {
-      margin-left: 0rem; }
+      margin-left: -3rem; }
     body header .datelocation {
       font-size: .6rem;
-      left: 16rem; }
+      left: 8rem; }
       body header .datelocation .cornerDash {
         display: none; }
     body header input {
       width: 11rem; }
     body .middle {
-      left: 2rem;
-      top: 10rem;
-      width: 90vw;
+      left: 0rem;
+      top: 14rem;
+      width: 85vw;
       height: 95vw; }
       body .middle .topInfo .currentTemp {
         position: relative;
         font-size: 5rem;
         right: 3rem; }
       body .middle .topInfo .degree {
-        font-size: 6rem; }
+        font-size: 5rem; }
       body .middle .topInfo .weatherDescript {
         font-size: 1.5rem;
+        top: 3rem;
         right: 4rem;
         position: relative; }
       body .middle .underline {
         width: 10rem;
-        left: 2rem; }
+        left: 2rem;
+        display: none; }
       body .middle .underlineTwo {
-        font-size: 3rem; }
+        font-size: 2rem;
+        display: none; }
       body .middle .additionalInfo .moreInfo {
         position: relative;
-        left: 7rem;
-        bottom: 1rem;
+        left: 6rem;
+        top: 2rem;
         font-size: 2rem; }
         body .middle .additionalInfo .moreInfo th {
           padding-right: 1rem; }
@@ -406,4 +423,21 @@ body {
       left: -4.5rem;
       bottom: 9rem;
       height: 20rem;
-      width: 20rem; } }
+      width: 20rem; }
+  body:after {
+    content: "";
+    position: fixed;
+    /* stretch a fixed position to the whole screen */
+    top: 0;
+    height: 100vh;
+    /* fix for mobile browser address bar appearing disappearing */
+    left: 0;
+    right: 0;
+    z-index: -3;
+    /* needed to keep in the background */
+    background: url("../img/photo-1531147646552-1eec68116469.jpeg") center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative; } }
