@@ -1,0 +1,325 @@
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  html, body {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden; } }
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  body .middle .centerContainer .topInfo .currentTemp {
+    font-size: 7rem; }
+  body .middle .centerContainer .topInfo .degree {
+    font-size: 8rem; }
+  body .middle .centerContainer .topInfo .weatherDescript {
+    font-size: 3rem; }
+  body .middle .centerContainer .additionalInfo {
+    font-size: 2rem; }
+    body .middle .centerContainer .additionalInfo .moreInfo {
+      width: 35vw; } }
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  html, body {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; }
+  body {
+    background: url("../img/photo-1531147646552-1eec68116469.jpeg") 100%/cover no-repeat; }
+    body .middle .centerContainer {
+      height: 35vh; }
+      body .middle .centerContainer .currentWeather {
+        align-items: flex-start;
+        height: 20vh; }
+      body .middle .centerContainer .topInfo .currentTemp {
+        font-size: 7rem; }
+      body .middle .centerContainer .topInfo .degree {
+        font-size: 6rem; }
+      body .middle .centerContainer .topInfo .weatherDescript {
+        font-size: 3rem; }
+      body .middle .centerContainer .additionalInfo {
+        height: 0vh; }
+        body .middle .centerContainer .additionalInfo .moreInfo {
+          width: 40vw;
+          font-size: 2rem; }
+          body .middle .centerContainer .additionalInfo .moreInfo .percentage {
+            font-size: 1rem; }
+          body .middle .centerContainer .additionalInfo .moreInfo .humidityDetail {
+            font-size: .7rem; }
+          body .middle .centerContainer .additionalInfo .moreInfo .mph {
+            font-size: 1rem; }
+          body .middle .centerContainer .additionalInfo .moreInfo .windSpeed {
+            font-size: .4rem; }
+          body .middle .centerContainer .additionalInfo .moreInfo .humidity {
+            width: 2.2rem;
+            height: 2.2rem; }
+          body .middle .centerContainer .additionalInfo .moreInfo .fa-wind {
+            font-size: 2rem; }
+    body .weather {
+      margin-left: -12rem;
+      margin-top: 1rem; }
+      body .weather .weatherPic {
+        height: 25rem;
+        width: 25rem; } }
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  html, body {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden; }
+  body {
+    background: url("../img/photo-1531147646552-1eec68116469.jpeg"); }
+    body .middle .centerContainer {
+      height: 45vh; }
+      body .middle .centerContainer .currentWeather {
+        align-items: flex-start; }
+      body .middle .centerContainer .topInfo .currentTemp {
+        font-size: 7rem; }
+      body .middle .centerContainer .topInfo .degree {
+        font-size: 6rem; }
+      body .middle .centerContainer .topInfo .weatherDescript {
+        font-size: 3rem; }
+      body .middle .centerContainer .additionalInfo {
+        height: 0vh; }
+        body .middle .centerContainer .additionalInfo .moreInfo {
+          width: 40vw;
+          font-size: 2rem; }
+          body .middle .centerContainer .additionalInfo .moreInfo .percentage {
+            font-size: 1rem; }
+          body .middle .centerContainer .additionalInfo .moreInfo .humidityDetail {
+            font-size: .7rem; }
+          body .middle .centerContainer .additionalInfo .moreInfo .mph {
+            font-size: 1rem; }
+          body .middle .centerContainer .additionalInfo .moreInfo .windSpeed {
+            font-size: .4rem; }
+          body .middle .centerContainer .additionalInfo .moreInfo .humidity {
+            width: 2.2rem;
+            height: 2.2rem; }
+          body .middle .centerContainer .additionalInfo .moreInfo .fa-wind {
+            font-size: 2rem; }
+    body .weather {
+      margin-left: -8rem;
+      margin-top: 1rem; }
+      body .weather .weatherPic {
+        height: 25rem;
+        width: 25rem; } }
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  body .middle .centerContainer {
+    height: 30vh;
+    width: 50vw; }
+    body .middle .centerContainer .currentWeather {
+      align-items: flex-start;
+      height: 18vh; }
+    body .middle .centerContainer .topInfo {
+      margin-left: 1.5rem; }
+      body .middle .centerContainer .topInfo .currentTemp {
+        font-size: 5rem; }
+      body .middle .centerContainer .topInfo .degree {
+        font-size: 6rem; }
+      body .middle .centerContainer .topInfo .weatherDescript {
+        font-size: 2rem; }
+    body .middle .centerContainer .additionalInfo {
+      height: 0vh; }
+      body .middle .centerContainer .additionalInfo .moreInfo {
+        width: 40vw;
+        font-size: 1.3rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo th {
+          height: 2rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo .percentage {
+          font-size: .7rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo .humidityDetail {
+          font-size: .7rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo .mph {
+          font-size: .7rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo .windSpeed {
+          font-size: .4rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo .humidity {
+          width: 1.2rem;
+          height: 1.2rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo .fa-wind {
+          font-size: 1.2rem; }
+  body .weather {
+    margin-left: -8rem;
+    margin-top: 1rem; }
+    body .weather .weatherPic {
+      height: 20rem;
+      width: 20rem; } }
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  html, body {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; }
+  body header .logo img {
+    height: 3rem;
+    width: 5rem; }
+  body header .datelocation {
+    font-size: .5rem; }
+    body header .datelocation input {
+      width: 10rem;
+      height: 1.5rem; }
+  body .middle .centerContainer {
+    height: 32vh;
+    width: 70vw; }
+    body .middle .centerContainer .currentWeather {
+      align-items: flex-start;
+      height: 18vh; }
+    body .middle .centerContainer .topInfo {
+      margin-left: 1.5rem; }
+      body .middle .centerContainer .topInfo .currentTemp {
+        font-size: 4rem; }
+      body .middle .centerContainer .topInfo .degree {
+        font-size: 6rem; }
+      body .middle .centerContainer .topInfo .weatherDescript {
+        font-size: 1.5rem; }
+    body .middle .centerContainer .additionalInfo {
+      height: 0vh; }
+      body .middle .centerContainer .additionalInfo .moreInfo {
+        width: 65vw;
+        font-size: 1.3rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo th {
+          height: 2rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo .percentage {
+          font-size: .7rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo .humidityDetail {
+          font-size: .7rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo .mph {
+          font-size: .7rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo .windSpeed {
+          font-size: .4rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo .humidity {
+          width: 1.2rem;
+          height: 1.2rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo .fa-wind {
+          font-size: 1.2rem; }
+  body .weather {
+    margin-left: -18rem;
+    margin-top: 1rem; }
+    body .weather .weatherPic {
+      height: 20rem;
+      width: 20rem; } }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 823px) and (orientation: landscape) {
+  html, body {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; }
+  body header .logo img {
+    height: 3rem;
+    width: 5rem; }
+  body header .datelocation {
+    font-size: .5rem; }
+    body header .datelocation input {
+      width: 10rem;
+      height: 1.5rem; }
+  body .middle .centerContainer {
+    height: 62vh;
+    width: 40vw; }
+    body .middle .centerContainer .currentWeather {
+      align-items: flex-start;
+      height: 33vh; }
+    body .middle .centerContainer .topInfo {
+      margin-left: 1.5rem; }
+      body .middle .centerContainer .topInfo .currentTemp {
+        font-size: 4rem; }
+      body .middle .centerContainer .topInfo .degree {
+        font-size: 6rem; }
+      body .middle .centerContainer .topInfo .weatherDescript {
+        font-size: 1.5rem; }
+    body .middle .centerContainer .additionalInfo {
+      height: 0vh; }
+      body .middle .centerContainer .additionalInfo .moreInfo {
+        width: 65vw;
+        font-size: 1.3rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo th {
+          height: 2rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo .percentage {
+          font-size: .7rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo .humidityDetail {
+          font-size: .7rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo .mph {
+          font-size: .7rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo .windSpeed {
+          font-size: .4rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo .humidity {
+          width: 1.2rem;
+          height: 1.2rem; }
+        body .middle .centerContainer .additionalInfo .moreInfo .fa-wind {
+          font-size: 1.2rem; }
+  body .weather {
+    margin-left: -4rem;
+    margin-top: -5rem; }
+    body .weather .weatherPic {
+      height: 17rem;
+      width: 17rem; } }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  body .weather {
+    margin-left: -18rem;
+    margin-top: -5rem; }
+    body .weather .weatherPic {
+      height: 20rem;
+      width: 20rem; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  body header .logo img {
+    height: 3rem;
+    width: 4rem; }
+  body header .datelocation {
+    font-size: .4rem; }
+    body header .datelocation input {
+      width: 8rem;
+      height: 1.5rem; }
+  body .middle .centerContainer {
+    height: 40vh; }
+    body .middle .centerContainer .topInfo {
+      margin-left: 1.5rem; }
+      body .middle .centerContainer .topInfo .currentTemp {
+        font-size: 3rem; }
+      body .middle .centerContainer .topInfo .degree {
+        font-size: 4rem; }
+      body .middle .centerContainer .topInfo .weatherDescript {
+        font-size: 1.2rem; }
+    body .middle .centerContainer .additionalInfo {
+      height: 0vh;
+      font-size: 3rem; }
+  body .weather {
+    margin-left: -12rem;
+    margin-top: -5rem; }
+    body .weather .weatherPic {
+      height: 15rem;
+      width: 15rem; } }
